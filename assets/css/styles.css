@@ -1,0 +1,183 @@
+/* Variables */
+:root {
+  --gray-lighter: #FAFAFA;
+  --gray-light: #F5F7FA;
+  --gray: #EBEFF5;
+  --gray-darker: #BDCCDB;
+  --gray-darker: #243342;
+  
+  --red: #DD3C49;
+  --blue: #41ABC0;
+  --yellow: #F5B83D;
+  --green: #3BCF53;
+
+  --primary: var(--red);
+  --secondary: var(--blue);
+  --background: var(--gray-light);
+  
+  --font-color: var(--gray-darker);
+  --link-color: var(--secondary);
+  --link-highlight-color: var(--primary);
+  
+  --link-color-lighten: #67BCCC;
+  --primary-lighten: #E3636E;
+}
+
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font: 16px "Roboto", sans-serif;
+  color: var(--font-color);
+}
+
+button {
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "Paytone One", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-lighten);
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Header */
+
+header {
+  width: 100%;
+  padding: 24px 0;
+}
+
+header .container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+header nav {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  font-weight: bold;
+  color: var(--font-color);
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+header nav a:last-child {
+  color: var(--primary);
+}
+
+header nav a:before,
+header nav a:after {
+  content: " ";
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  height: 4px;
+  margin: 4px 0 0;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  background-color: var(--primary);
+}
+
+header nav a:before {
+  left: 50%;
+}
+
+header nav a:after {
+  right: 50%;
+}
+
+header nav a:hover {
+  color: var(--font-color);
+}
+
+header nav a:last-child:hover {
+  color: var(--primary);
+}
+
+header nav a:hover:before,
+header nav a:hover:after {
+  opacity: 1;
+  width: 50%;
+}
+
+/* Hero */
+
+.hero {
+  width: 100%;
+  max-width: 960px;
+  margin-top: 32px;
+  overflow: hidden;
+}
+
+.hero article {
+  display: flex;
+}
+
+.hero article.hidden {
+  display: none;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 32px 0;
+  line-height: 2rem;
+  font-size: 1.3rem;
+  color: var(--secondary);
+}
+
+.hero .button {
+  font-family: "Paytone One", sans-serif;
+  color: var(--gray-lighter);
+  background-color: var(--primary);
+  padding: 16px 32px;
+  border-radius: 32px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hero .button:hover {
+  background-color: var(--primary-lighten);
+}
+
+.hero .img {
+  text-align: center;
+}
