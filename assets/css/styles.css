@@ -29,7 +29,6 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -180,4 +179,227 @@ header nav a:hover:after {
 
 .hero .img {
   text-align: center;
+}
+
+/* Plans */
+
+.plans h1 {
+  font-family: 'Paytone One', sans-serif;
+  font-size: 3rem;
+  color: var(--gray-lighter); 
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.plans {
+  background: var(--gray-darker);
+  padding: 4rem;
+  padding-bottom: 3rem;
+}
+
+.card {
+  background-color: var(--background);
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px 10px 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  height: 500px;
+}
+
+
+.card h1 {
+  font-size: 50px;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-lighten);
+  margin-top: 1rem;
+}
+
+.card p {
+  font-size: 0.875rem;
+  margin-bottom: 0.875rem;
+}
+
+.card hr {
+  margin: 1.9rem auto; 
+  border: 0;
+  border-top: 1px solid var(--gray-darker);
+  width: 250px;
+}
+
+.card-highlight {
+  background: linear-gradient(180deg, var(--primary-lighten) 0%, var(--primary) 100%);
+  padding: 3rem 1rem 0;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+  height: 550px;
+  margin-top: -2rem;
+  z-index: 999;
+  position: absolute;
+}
+
+.card-highlight h1 {
+  color: var(--gray-lighter);
+}
+
+.card-highlight p {
+  color:var(--gray-lighter);
+}
+
+.card-highlight hr {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 8rem 0 8rem 0;
+
+}
+
+.cards div:nth-child(1) {
+  margin-right: 19rem;
+}
+
+.btn {
+  background: var(--primary);
+  padding: 0.8rem rem;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--gray-lighter);
+  font-family: 'Paytone One', sans-serif;
+  display: block;
+  transition: all .1s;
+  text-align: center;
+  display: inline-block;
+  font-size: 0.875rem;
+}
+
+.btn-card {
+  margin-top: 4rem;
+  margin-bottom: 30px;
+  padding: 1rem 3rem;
+}
+.prueba-gratis {
+  margin-top: 6.5rem;
+  margin-bottom: 30px;
+  padding: 1rem 3rem;
+}
+
+.btn-card-highlight {
+  color: var(--background);
+  background-color: var(--primary);
+  border: 1px solid var(--background);
+  margin-top: 4.4rem;
+  padding: 1rem 3rem;
+  transition: all .1s;
+}
+
+.btn-card-highlight:hover {
+  color: var(--primary-lighten);
+  background-color: var(--background);
+  border: 1px solid var(--primary-lighten);
+  margin-top: 4.4rem;
+  padding: 1rem 3rem;
+}
+
+
+.btn-card:hover {
+  background: var(--primary-lighten);
+  transition: 0.2s;
+  color: var(--gray-lighter);
+}
+
+/* Footer */
+
+footer {
+  background: #202D38;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  color: #fff;
+}
+
+footer ul li {
+  text-decoration: none;
+  
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.functions {
+  font-size: 2.25rem;
+  font-family: 'Paytone One', sans-serif;
+  margin: 2.25rem 0;
+}
+
+.functions a:nth-child(1) {
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+
+footer h1 {
+  margin: 2.25rem 1.5rem;
+}
+
+.redes-sociais {
+  font-size: 0.75rem;
+  font-family: 'Paytone One', sans-serif;
+  margin: 2.75rem 2rem;
+}
+
+.redes-sociais li:nth-child(2) {
+  margin-top: 0.4rem;
+}
+
+.cefalia-derechos p:nth-child(1) {
+  font-size: 0.8rem;
+  font-family: 'Paytone One', sans-serif;
+}
+
+.cefalia-derechos p:nth-child(2) {
+  font-size: 0.5rem;
+  font-family: 'Paytone One', sans-serif;
+  margin-top: 0.4rem;
+}
+
+.cefalia-derechos {
+  margin: 2.75rem 3rem;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-end {
+  background-color: #192229;
+  color: var(--gray-lighter);
+  font-size: 0.7rem;
+  padding: 1.2rem 0;
+}
+
+.footer-end p {
+  font-family: 'Paytone One', sans-serif;
+}
+
+.footer-end a {
+  text-decoration: none;
+  color: var(--gray-lighter);
+  font-weight: bold;
+  transition: all 0.2s;
+  position: relative;
+}
+
+footer a:hover{
+  color: var(--primary);
+  transition: all 0.2s;
 }
